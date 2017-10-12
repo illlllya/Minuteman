@@ -1,0 +1,49 @@
+* {
+	font-family: arial;
+	color: gray;
+}
+
+input {
+	width: 100%;
+}
+
+table {
+	width: 100%;
+}
+
+#content {
+	border: 1px solid black;
+	width: 70%;
+	margin: 0 auto;
+	padding: 20px 20px 50px 20px;
+}
+
+
+#header {
+	font-size: 25px;
+	margin-bottom: 30px;
+
+}
+
+#header > span {
+	font-size: 12px;
+	margin-top: -10px;
+}
+
+#timestamp {
+	margin-top: -20px;
+}
+
+#attendees {
+	margin-bottom: 30px;
+}
+
+#tasks {
+	margin-bottom: 30px;
+}
+
+#logo {
+	width: 75px;
+	float: right;
+	margin-top: -30px;
+}

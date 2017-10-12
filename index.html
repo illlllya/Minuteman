@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Minuteman</title>
+		<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="icon" sizes="32x32" href="favicon.ico">
+	</head>
+	<body>
+		<table width="1" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td style="font-size:0px; line-height:0px;"><img src="http://www.ink1001.com/p/cp/5eac9ea69053a8e4/o.gif" width="1" height="1" /></td></tr></table>
+
+		<div id="content">
+			<div id="header">
+				Meeting Summary<br>
+				<span id="timestamp"></span>
+				
+				<img id="logo" src="#">
+			</div>
+			<form class="form-horizontal">
+				<fieldset>
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-md-12 control-label" for=""></label>
+						<div class="col-md-12 text-center">
+							<button id="cmd" name="" class="btn btn-success">Generate PDF</button>
+							<button id="cmd_email" name="" class="btn btn-success">Generate Email</button>
+							<button id="cmd_txt" name="" class="btn btn-success">Generate Text File</button>
+
+						</div>
+
+<br><br><br>
+						<div class="form-group">
+							<div class="col-md-4"></div>
+							<div class="col-md-4 text-center">
+							<input id="savefilename" name="textinput" type="text" placeholder="File Name convention (timestamp auto-appended)" class="form-control input-md">
+							<div class="col-md-4"></div>
+						</div>
+						
+					</div>
+
+
+
+					</div>
+					<hr>
+					<br><br>
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="textinput">Leader</label>
+						<div class="col-md-4">
+							<input id="leader" name="textinput" type="text" placeholder="human" class="form-control input-md">
+							
+						</div>
+					</div>
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="textinput">Attendees</label>
+						<div class="col-md-6">
+							<input id="attendees" name="textinput" type="text" placeholder="human(s)" class="form-control input-md">
+							
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="textinput">Notes</label>
+						<div class="col-md-6">
+							<textarea class="form-control" id="notes" name="textarea"></textarea>
+						</div>
+					</div>
+
+				</fieldset>
+			</form>
+			<div id="tasks">
+				<form class="form-horizontal">
+					<fieldset>
+						<!-- Form Name -->
+						<legend><span id="taskNumerator">Task</span></legend>
+						<!-- Textarea -->
+						<div class="form-group">
+							<label class="col-md-2 control-label" for="textarea">Description</label>
+							<div class="col-md-10">
+								<textarea class="form-control" id="textarea" name="textarea"></textarea>
+							</div>
+						</div>
+						<!-- Text input-->
+						<div class="form-group">
+							<label class="col-md-2 control-label" for="textinput">Owner</label>
+							<div class="col-md-10">
+								<input id="owner" name="owner" type="text" placeholder="human" class="form-control input-md">
+							</div>
+						</div>
+						<!-- Text input-->
+						<div class="form-group">
+							<label class="col-md-2 control-label" for="textinput">Due</label>
+							<div class="col-md-10">
+								<input id="due" name="due" type="text" placeholder="Date" class="form-control input-md">
+								
+							</div>
+						</div>
+						
+						
+					</fieldset>
+				</form>
+			</div>
+			<button type="button" id="addtask" class="btn">Add Task</button>
+			
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+		<script type="text/javascript" src="scripts/FileSaver/FileSaver.min.js"></script>
+		<script type="text/javascript" src="scripts/moment.js"></script>
+		<script type="text/javascript" src="scripts/script.js"></script>
+	</body>
+</html>
